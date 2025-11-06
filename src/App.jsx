@@ -21,11 +21,14 @@ function App() {
         </div>
       </header>
 
-      <main className="max-w-6xl mx-auto px-6 md:px-10 space-y-12 md:space-y-16 py-8 md:py-12">
+      <main className="space-y-12 md:space-y-16 py-0">
+        {/* Hero is full-bleed, following sections are contained */}
         <Hero />
-        <Features />
-        <AutomationDemo />
-        <CTA />
+        <div className="max-w-6xl mx-auto px-6 md:px-10">
+          <Features />
+          <AutomationDemo />
+          <CTA />
+        </div>
       </main>
 
       <footer className="border-t border-slate-200 py-8 text-sm text-slate-600">
